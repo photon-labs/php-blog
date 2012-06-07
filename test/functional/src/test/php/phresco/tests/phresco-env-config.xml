@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<environment>
+<Browser>firefox</Browser>
+    <Server appliesTo="tech-php" desc="cofig" name="server">
+        <admin_password/>
+        <port>80</port>
+        <context>PHPPilotProject</context>
+        <type>Apache Tomcat 7.1</type>
+        <deploy_dir>c:\wamp\www</deploy_dir>
+        <host>localhost</host>
+        <protocol>http</protocol>
+        <admin_username/>
+    </Server>
+    
+</environment>
