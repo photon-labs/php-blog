@@ -26,7 +26,8 @@
         <sonar.phpPmd.skip xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">false</sonar.phpPmd.skip>
         <sonar.dynamicAnalysis xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">true</sonar.dynamicAnalysis>
         <sonar.phpPmd.shouldRun xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">true</sonar.phpPmd.shouldRun>
-        <sonar.phpCodesniffer.shouldRun xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">true</sonar.phpCodesniffer.shouldRun>
+		<sonar.phpCodesniffer.skip>true</sonar.phpCodesniffer.skip> 
+		<sonar.phpCodesniffer.shouldRun xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">true</sonar.phpCodesniffer.shouldRun>
         <sonar.phpDepend.shouldRun xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">true</sonar.phpDepend.shouldRun>
         <sonar.phpUnit.coverage.shouldRun xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">false</sonar.phpUnit.coverage.shouldRun>
         <sonar.phpUnit.shouldRun xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">false</sonar.phpUnit.shouldRun>
