@@ -140,7 +140,7 @@
             <bytes>true</bytes>
           </value>
         </objProp>
-        <stringProp name="filename">C:\Documents and Settings\chelladurai_a\Desktop\result\results9.xml</stringProp>
+        <stringProp name="filename"></stringProp>
       </ResultCollector>
       <hashTree/>
     </hashTree>
