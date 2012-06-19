@@ -1,4 +1,4 @@
----
+/*---
 -- ###
 -- PHR_PhpBlog
 -- %%
@@ -16,7 +16,7 @@
 -- See the License for the specific language governing permissions and
 -- limitations under the License.
 -- ###
----
+---*/
 -- phpMyAdmin SQL Dump
 -- version 3.3.9
 -- http://www.phpmyadmin.net
