@@ -26,7 +26,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
 	<artifactId>Php</artifactId>
 	<packaging>php</packaging>
 	<name>Phresco Pilot Project for PHP Functional Tests</name>
-	<version>1.0</version>
+	<version>1.2.0.3001-SNAPSHOT</version>
 		<pluginRepositories>
 			<pluginRepository>
 				<id>release-repo1.php-maven.org</id>
@@ -118,7 +118,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
 				<plugin>
 					<groupId>com.photon.phresco.plugins</groupId>
 					<artifactId>php-maven-plugin</artifactId>
-					<version>1.2.0.3000</version>
+					<version>1.2.0.3001-SNAPSHOT</version>
 						<executions>
 							<execution>
 							<phase>validate</phase>
