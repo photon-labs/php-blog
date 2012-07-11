@@ -35,11 +35,11 @@ class Search_Info extends PhpCommonFun
 		
 		$doc = new DOMDocument();
 		
-		$doc->load('test-classes/phresco/tests/phpsetting.xml');
+		$doc->load('test-classes/phresco/tests/PhpData.xml');
 		
-		$users = $doc->getElementsByTagName("searchmodule");
+		$Search = $doc->getElementsByTagName("searchmodule");
 		
-		foreach( $users as $searchmodule ){
+		foreach( $Search as $searchmodule ){
 		
 			$Searchtopics = $searchmodule->getElementsByTagName("Searchtopic");
 			$Searchtopic = $Searchtopics->item(0)->nodeValue;

@@ -38,7 +38,7 @@ class Dashboard_AddTopic extends PhpCommonFun
 		
 		$doc = new DOMDocument();
 		
-		$doc->load('test-classes/phresco/tests/phpsetting.xml');
+		$doc->load('test-classes/phresco/tests/PhpData.xml');
 		
 		$users = $doc->getElementsByTagName("searchmodule");
 		

@@ -19,23 +19,7 @@
   ###
   -->
 
-<users>
-	<user>
-		<email>john@photoninfotech.net</email>
-		<password>john</password>
-	</user>
-	
-	<register>
-		<username>john</username>
-		<email>john@photoninfotech.net</email>
-		<password>john</password>
-	</register>
-	
-	<acupdate>
-		<username>john</username>
-		<email>john@photoninfotech.net</email>
-		<password>john</password>
-	</acupdate>
+<PhpData>
 	
 	<searchmodule>
 		<Searchtopic>Drupal</Searchtopic>
@@ -53,4 +37,4 @@
 	</dbupdatemodule>
 	
 	
-</users>
+</PhpData>

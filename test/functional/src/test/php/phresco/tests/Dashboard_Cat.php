@@ -36,11 +36,11 @@ class Dashboard_Cat extends PhpCommonFun
 		
 		$doc = new DOMDocument();
 		
-		$doc->load('test-classes/phresco/tests/phpsetting.xml');
+		$doc->load('test-classes/phresco/tests/PhpData.xml');
 		
-		$users = $doc->getElementsByTagName("searchmodule");
+		$DbCart = $doc->getElementsByTagName("searchmodule");
 		
-		foreach( $users as $searchmodule ){
+		foreach( $DbCart as $searchmodule ){
 			
 			$DbCartTopics = $searchmodule->getElementsByTagName("db-carttopic");
 			$DbCartTopic = $DbCartTopics->item(0)->nodeValue;

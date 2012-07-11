@@ -75,11 +75,11 @@ class PhpCommonFun extends RequiredFunction
 	
 		$doc = new DOMDocument();
 		
-		$doc->load('test-classes/phresco/tests/phpsetting.xml');
+		$doc->load('test-classes/phresco/tests/UserInfo.xml');
 		
-		$users = $doc->getElementsByTagName("user");
+		$Login = $doc->getElementsByTagName("user");
 		
-		foreach( $users as $user ){
+		foreach( $Login as $user ){
 			
 			$emails = $user->getElementsByTagName("email");
 			$email = $emails->item(0)->nodeValue;
