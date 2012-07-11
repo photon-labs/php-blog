@@ -33,11 +33,11 @@ class Register_NewUser extends PhpCommonFun
 		$testcases = __FUNCTION__;
 		$doc = new DOMDocument();
 		
-		$doc->load('test-classes/phresco/tests/phpsetting.xml');
+		$doc->load('test-classes/phresco/tests/UserInfo.xml');
 		
-		$users = $doc->getElementsByTagName("register");
+		$Registers = $doc->getElementsByTagName("register");
 		
-		foreach( $users as $register ){
+		foreach( $Registers as $register ){
 		
 			$names = $register->getElementsByTagName("username");
 			$name = $names->item(0)->nodeValue;

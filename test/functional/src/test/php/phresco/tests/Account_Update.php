@@ -35,11 +35,11 @@ class Account_Update extends PhpCommonFun
 		
 		$doc = new DOMDocument();
 		
-		$doc->load('test-classes/phresco/tests/phpsetting.xml');
+		$doc->load('test-classes/phresco/tests/UserInfo.xml');
 		
-		$users = $doc->getElementsByTagName("acupdate");
+		$Account = $doc->getElementsByTagName("acupdate");
 		
-		foreach( $users as $acupdate ){
+		foreach( $Account as $acupdate ){
 		
 			$names = $acupdate->getElementsByTagName("username");
 			$name = $names->item(0)->nodeValue;

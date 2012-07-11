@@ -38,11 +38,11 @@ class Dashboard_EditTopic extends PhpCommonFun
 		
 		$doc = new DOMDocument();
 		
-		$doc->load('test-classes/phresco/tests/phpsetting.xml');
+		$doc->load('test-classes/phresco/tests/PhpData.xml');
 		
-		$users = $doc->getElementsByTagName("dbupdatemodule");
+		$edittopic = $doc->getElementsByTagName("dbupdatemodule");
 		
-		foreach( $users as $dbupdatemodule){
+		foreach( $edittopic as $dbupdatemodule){
 			
 			$edittopicnames = $dbupdatemodule->getElementsByTagName("dbedittopicname");
 			$edittopicname = $edittopicnames->item(0)->nodeValue;

@@ -36,11 +36,11 @@ class Dashboard_CatEdit extends PhpCommonFun
 		
 		$doc = new DOMDocument();
 		
-		$doc->load('test-classes/phresco/tests/phpsetting.xml');
+		$doc->load('test-classes/phresco/tests/PhpData.xml');
 		
-		$users = $doc->getElementsByTagName("dbupdatemodule");
+		$cartedit = $doc->getElementsByTagName("dbupdatemodule");
 		
-		foreach( $users as $dbupdatemodule ){
+		foreach( $cartedit as $dbupdatemodule ){
 			
 			$cartedittopics = $dbupdatemodule->getElementsByTagName("dbcartedittopic");
 			$cartedittopic = $cartedittopics->item(0)->nodeValue;
