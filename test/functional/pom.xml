@@ -156,4 +156,21 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
 				</plugin>
 			</plugins>
 		</build>
+		
+		<properties>
+			<sonar.language xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">php</sonar.language>
+			<sonar.phpPmd.skip xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">false</sonar.phpPmd.skip>
+			<sonar.dynamicAnalysis xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">true</sonar.dynamicAnalysis>
+			<sonar.phpPmd.shouldRun xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">true</sonar.phpPmd.shouldRun>
+			<sonar.phpCodesniffer.shouldRun xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">true</sonar.phpCodesniffer.shouldRun>
+			<sonar.phpCodesniffer.skip>true</sonar.phpCodesniffer.skip> 
+			<sonar.phpDepend.shouldRun xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">true</sonar.phpDepend.shouldRun>
+			<sonar.phpUnit.coverage.shouldRun xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">false</sonar.phpUnit.coverage.shouldRun>
+			<sonar.phpUnit.shouldRun xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">false</sonar.phpUnit.shouldRun>
+			<sonar.phpcpd.shouldRun xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">true</sonar.phpcpd.shouldRun>
+			<sonar.phpcpd.excludes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">source/sql</sonar.phpcpd.excludes>
+			<sonar.phpcpd.excludes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">source/public_html</sonar.phpcpd.excludes>
+			<sonar.phase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">validate</sonar.phase>
+    </properties>
+	
 </project>
