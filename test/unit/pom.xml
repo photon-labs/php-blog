@@ -6,7 +6,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
 	<artifactId>Php</artifactId>
 	<packaging>php</packaging>
 	<name>Phresco Pilot Project for PHP unit tests</name>
-	<version>1.2.0.9001-SNAPSHOT</version>
+	<version>1.2.1.1000-SNAPSHOT</version>
 	<pluginRepositories>
 		<pluginRepository>
 			<id>release-repo1.php-maven.org</id>
