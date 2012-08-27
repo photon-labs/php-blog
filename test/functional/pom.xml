@@ -157,6 +157,24 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
 			</plugins>
 		</build>
 		
+        <profiles>
+            <profile>
+                <id>ci</id>
+                <activation>
+                    <activeByDefault>false</activeByDefault>
+                </activation>
+                <build>
+                    <plugins>
+                        <plugin>
+                            <groupId>com.photon.phresco.plugins</groupId>
+                            <artifactId>ci-maven-plugin</artifactId>
+                            <version>1.2.1.1000-SNAPSHOT</version>
+                        </plugin>
+                    </plugins>
+                </build>
+            </profile>
+        </profiles>
+        
 		<properties>
 			<sonar.language xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">php</sonar.language>
 			<sonar.phpPmd.skip xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">false</sonar.phpPmd.skip>
