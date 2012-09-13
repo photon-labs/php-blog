@@ -5,7 +5,7 @@
 	<artifactId>Phresco</artifactId>
 	<packaging>pom</packaging>
 	<name>Performance testing for PHP_Framework Webservices</name>
-	<version>1.2.2.1002-SNAPSHOT</version>
+	<version>1.2.2.1003-SNAPSHOT</version>
 	
 	<build>
 		<plugins>
