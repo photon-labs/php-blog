@@ -21,7 +21,6 @@
 /*	Author by {phresco} QA Automation Team	*/
 
 require_once 'PhpCommonFun.php';
-require_once 'PHPUnit/Extensions/SeleniumTestCase.php';
 
 class LoginLogout_User extends PhpCommonFun
 {
