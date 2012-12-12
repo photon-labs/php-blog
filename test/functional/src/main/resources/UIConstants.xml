@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<environment>
+<phresco>
+
+ 
+          <register>//li[7]/a</register>   
+          <usernamet>//input</usernamet> 
+          <emailt>//div[4]/input</emailt>
+          <passwordt>//div[6]/input</passwordt>
+          <rbutton>//div[7]/input</rbutton>s
+          <amailt>//input[@id='adminEmail']</amailt>
+          <apassword>//input[@id='adminPassword']</apassword>
+          <abutton>//input[@name='Submit']</abutton>
+          <logout>//a[contains(text(),'logout')]</logout>
+          <searchbox>//input</searchbox>
+          <searchvalue>Drupal</searchvalue>    
+          <searchb>//form[@id='search']/div[4]/input</searchb>
+          <loglink>//a[contains(text(),'login')]</loglink>
+          <dashboard>//a[contains(text(),'Dashboard')]</dashboard>
+          <myaccount>//a[contains(text(),'Myaccount')]</myaccount>
+          <ufield>//input[@id='userName']</ufield>
+          <efield>//input[@id='userEmail']</efield>
+          <pfield>//input[@id='userPassword']</pfield>
+          <ubutton>//input[@name='Submit']</ubutton>
+          <catlink1>//div[4]/div[2]/a</catlink1>
+          <catfield>//input[@id='catTitle']</catfield>
+          <descfield>//textarea[@id='catDesc']</descfield>
+          <catbutton>//input[@name='Submit']</catbutton>
+          
+          <home>//a[contains(text(),'Home')]</home>
+          <edit1>//a[contains(text(),'Edit')]</edit1>
+          <catdescriptionedit>//textarea[@id='catDesc']</catdescriptionedit>
+          <submitbutton>//input[@name='Submit']</submitbutton>
+          <linkdelete>//a[2]</linkdelete>
+          <homelast>(//a[contains(@href, '../../../../public_html/blog/index.php')])[2]</homelast>
+          
+         <dashboard2>//li[7]/a</dashboard2>
+         <clickadd>//form/div/a</clickadd>
+         <topictitle>//input[@id='topicTitle']</topictitle>
+         <topictext>//textarea[@id='topicText']</topictext>
+         <onceclick>//input[@name='Submit']</onceclick>
+         <edit2>//a[contains(text(),'Edit')]</edit2>
+         <topictitle1>//div[9]/div[2]/input</topictitle1>
+         <topictext1>//textarea</topictext1>
+         <cliklast>//input[3]</cliklast>
+         <delete>//a[2]</delete>
+         <logoff>//a[contains(text(),'Logoff')]</logoff>
+         
+
+</phresco>
+</environment>

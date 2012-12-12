@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="AllTest"  parallel="tests" thread-count="10">
+   <suite-files>
+    <suite-file path="./WelcomePageTestSuite.xml" />  
+  </suite-files>
+</suite>
+  

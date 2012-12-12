@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<environment>
+           <Browser>firefox</Browser>
+		   <Server>
+               <context>phpblog20</context>
+               <protocol>http</protocol>
+               <host>localhost</host>
+               <port>80</port>
+               <resolution></resolution>
+           </Server>
+           <selenium>
+               <server.host>localhost</server.host>
+               <server.port></server.port>
+               <speed>300</speed>
+           </selenium>  
+</environment>
