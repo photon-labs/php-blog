@@ -24,9 +24,9 @@
 			<version>6.5.2</version>
 		</dependency>
 		<dependency>
-			<groupId>org.seleniumhq.selenium</groupId>
-			<artifactId>selenium-server</artifactId>
-			<version>2.21.0</version>
+			 <groupId>org.seleniumhq.selenium</groupId>
+ <artifactId>selenium-server-standalone</artifactId>
+ <version>2.26.0</version>
 		</dependency>
 			<dependency>
 				<groupId>com.opera</groupId>
@@ -87,15 +87,12 @@
 											   <overWrite>false</overWrite>
 											   <outputDirectory>chromedriver</outputDirectory>
 								  </artifactItem>
-								
-						</artifactItems>
+							</artifactItems>
 						</configuration>
 					</execution>
 				</executions>
 			</plugin>			
-			
-			
-			<plugin>
+				<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-dependency-plugin</artifactId>
 				<version>2.3</version>
@@ -111,9 +108,9 @@
 						<artifactItems>
 								<artifactItem>
 							
-												<groupId>org.seleniumhq.selenium</groupId>
-												<artifactId>selenium-server</artifactId>
-												<version>2.21.0</version>
+												 <groupId>org.seleniumhq.selenium</groupId>
+                                               <artifactId>selenium-server-standalone</artifactId>
+                                            <version>2.26.0</version>
 												<overWrite>false</overWrite>
 											    <outputDirectory>${project.basedir}/lib</outputDirectory>
 		
