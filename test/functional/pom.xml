@@ -33,7 +33,11 @@
 				<artifactId>operadriver</artifactId>
 				<version>0.14</version>
 		</dependency>
-	
+	<dependency>
+  <groupId>commons-lang</groupId>
+  <artifactId>commons-lang</artifactId>
+  <version>2.0</version>
+</dependency>
     
 	</dependencies>
 	<build>
@@ -99,7 +103,7 @@
 				<executions>
 					<execution>
 						<id>copy</id>
-						<phase>compile</phase>
+						<phase>validate</phase>
 						<goals>
 							<goal>copy</goal>
 						</goals>
