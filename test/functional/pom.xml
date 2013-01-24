@@ -10,13 +10,6 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
-	<repositories>
-    <repository>      
-      <id>seleniumserver</id>
-      <name>seleniumserver</name>
-      <url>http://172.16.18.178:8080/nexus/content/groups/public/</url>
-    </repository>
-  </repositories>
 	<dependencies>
 		<dependency>
 			<groupId>org.testng</groupId>
@@ -94,13 +87,7 @@
 							</artifactItems>
 						</configuration>
 					</execution>
-				</executions>
-			</plugin>			
-				<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-dependency-plugin</artifactId>
-				<version>2.3</version>
-				<executions>
+					
 					<execution>
 						<id>copy</id>
 						<phase>validate</phase>
@@ -123,8 +110,9 @@
 						</configuration>
 					</execution>
 				</executions>
-			</plugin>
-				<plugin>  
+			</plugin>			
+				
+			<plugin>  
                 <artifactId>maven-antrun-plugin</artifactId>  
                 <executions>  
                   <execution>  

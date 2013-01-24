@@ -8,9 +8,4 @@
                <port>80</port>
                <Resolution></Resolution>
            </Server>
-           <selenium>
-               <server.host>localhost</server.host>
-               <server.port></server.port>
-               <speed>300</speed>
-           </selenium>  
 </environment>
