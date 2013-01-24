@@ -12,7 +12,6 @@ public class PhrescoUiConstants {
 	public String BROWSER = "Browser";
 	public String PROTOCOL = "protocol";
 	public String PORT= "port";
-	public String RESOLUTION="Resolution";
 	
 	/**
 	 * Reading the URL values through PhrescoUiConstants Constructor
