@@ -4,7 +4,7 @@
 
 	<test name="VerifyWelcomePageOnFirefox" junit="false"
 		preserve-order="true">
-		<parameter name="browser" value="firefox" />
+		<parameter name="browser" value="safari" />
 		<parameter name="platform" value="WINDOWS" />
 		<classes>
 			<class name="com.photon.phresco.testcases.WelcomePageTestCase" />
@@ -13,7 +13,7 @@
 
 	 <test name="VerifyWelcomePageOnChrome" junit="false"
 		preserve-order="true">
-		<parameter name="browser" value="googlechrome" />
+		<parameter name="browser" value="opera" />
 		<parameter name="platform" value="WINDOWS" />
 		<classes>
 			<class name="com.photon.phresco.testcases.WelcomePageTestCase" />

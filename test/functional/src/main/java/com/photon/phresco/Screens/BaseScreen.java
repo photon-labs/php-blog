@@ -95,13 +95,41 @@ public class BaseScreen {
 
 		} else if (selectedBrowser.equalsIgnoreCase(Constants.BROWSER_IE)) {
 			log.info("---------------***LAUNCHING INTERNET EXPLORE***-----------");
-			driver = new InternetExplorerDriver();
-			capabilities = new DesiredCapabilities();
-			capabilities.setBrowserName("iexplore");
-			// break;
-			// capabilities.setPlatform(selectedPlatform);
+			try {
+				capabilities = new DesiredCapabilities();
+				capabilities.setJavascriptEnabled(true);
+				capabilities.setBrowserName("iexplorer");
+				} catch (Exception e) {
+					e.printStackTrace();
+			}
+		}
+			else if (selectedBrowser.equalsIgnoreCase(Constants.BROWSER_OPERA)) {
+				log.info("-------------***LAUNCHING OPERA***--------------");
+				try {
+					
+				capabilities = new DesiredCapabilities();
+				capabilities.setBrowserName("opera");
+				capabilities.setCapability("opera.autostart ",true);
 
-		} else if (selectedBrowser.equalsIgnoreCase(Constants.BROWSER_FIREFOX)) {
+				System.out.println("-----------checking the OPERA-------");
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+		
+		} 
+			else if (selectedBrowser.equalsIgnoreCase(Constants.BROWSER_SAFARI)) {
+				log.info("-------------***LAUNCHING SAFARI***--------------");
+				try {
+					
+			    capabilities = new DesiredCapabilities();
+				capabilities.setBrowserName("safari");
+				capabilities.setCapability("safari.autostart ", true);
+				System.out.println("-----------checking the SAFARI-------");
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+
+				} else if (selectedBrowser.equalsIgnoreCase(Constants.BROWSER_FIREFOX)) {
 			log.info("-------------***LAUNCHING FIREFOX***--------------");
 			capabilities = new DesiredCapabilities();
 			capabilities.setBrowserName("firefox");
