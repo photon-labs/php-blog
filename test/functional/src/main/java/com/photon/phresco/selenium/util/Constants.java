@@ -8,7 +8,7 @@ public class Constants {
 	/**
 	 * Execute tests on internet explorer
 	 */
-	public static final String BROWSER_IE = "iexplore";
+	public static final String BROWSER_IE = "iexplorer";
 
 	/**
 	 * Execute tests on firefox browser
