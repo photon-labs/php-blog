@@ -113,7 +113,7 @@ public class WelcomePageTestCase {
 		}
 	}
 	@Test
-	public void testcSearch()
+	public void testCSearch()
 			throws InterruptedException, IOException, Exception {
 		try {
 

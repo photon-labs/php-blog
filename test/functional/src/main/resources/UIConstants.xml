@@ -7,8 +7,8 @@
           <usernamet>//input</usernamet> 
           <emailt>//div[4]/input</emailt>
           <passwordt>//div[6]/input</passwordt>
-          <rbutton>//div[7]/input</rbutton>s
-          <amailt>//input[@id='adminEmail']</amailt>
+          <rbutton>//div[7]/input</rbutton>
+          <amailt>css=#adminEmail</amailt>
           <apassword>//input[@id='adminPassword']</apassword>
           <abutton>//input[@name='Submit']</abutton>
           <logout>//a[contains(text(),'logout')]</logout>
@@ -45,6 +45,8 @@
          <cliklast>//input[3]</cliklast>
          <delete>//a[2]</delete>
          <logoff>//a[contains(text(),'Logoff')]</logoff>
+         
+          <blog>//img</blog>
          
 
 </phresco>

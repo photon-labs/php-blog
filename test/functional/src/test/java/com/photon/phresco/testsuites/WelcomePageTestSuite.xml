@@ -2,24 +2,24 @@
 <suite name="WelcomePageTestSuite" parallel="tests"
 	thread-count="5" verbose="3">
 
-	<test name="VerifyWelcomePageOnFirefox" junit="false"
+	<test name="VerifyWelcomePageOnhtmlunitdriver" junit="false"
 		preserve-order="true">
-		<parameter name="browser" value="safari" />
+		<parameter name="browser" value="htmlunit" />
 		<parameter name="platform" value="WINDOWS" />
 		<classes>
 			<class name="com.photon.phresco.testcases.WelcomePageTestCase" />
 		</classes>
 	</test>
 
-	 <test name="VerifyWelcomePageOnChrome" junit="false"
+	 <!-- <test name="VerifyWelcomePageOnChrome" junit="false"
 		preserve-order="true">
 		<parameter name="browser" value="opera" />
 		<parameter name="platform" value="WINDOWS" />
 		<classes>
 			<class name="com.photon.phresco.testcases.WelcomePageTestCase" />
 		</classes>
-	</test> 
-</suite>
+	</test> -->
+	</suite>
  
 
  	
