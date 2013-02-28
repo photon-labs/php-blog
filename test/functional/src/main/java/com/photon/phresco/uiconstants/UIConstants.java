@@ -49,6 +49,8 @@ public class UIConstants {
     public String CLIKLAST="cliklast";
     public String DELETE="delete";
     public String LOGOFF="logoff";
+    
+    public String PHRESCOBLOG="blog";
 	
   
 	public UIConstants() {

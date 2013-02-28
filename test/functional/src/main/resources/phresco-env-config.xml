@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <environment>
-           <Browser>firefox</Browser>
-		   <Server>
-               <context>phpblog20</context>
+           <Browser>htmlunit</Browser>
+		   	<Server>
+               <context>phpblogBug</context>
                <protocol>http</protocol>
                <host>localhost</host>
                <port>80</port>

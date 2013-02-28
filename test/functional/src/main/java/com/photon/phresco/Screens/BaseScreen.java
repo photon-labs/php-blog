@@ -137,9 +137,22 @@ public class BaseScreen {
 			// break;
 			// driver = new RemoteWebDriver(server, capabilities);
 
-		} else {
+		} else if (selectedBrowser.equalsIgnoreCase(Constants.HTML_UNIT_DRIVER)) {
+			log.info("-------------***HTML_UNIT_DRIVER***--------------");
+			capabilities = new DesiredCapabilities();
+			capabilities.setBrowserName("htmlunit"); 
+			/*URL server = new URL("http://testVM:4444/wd/hub");
+			new RemoteWebDriver(new Url("http://testVM:4444/wd/hub");*/
+
+			System.out.println("-----------checking the HTML_UNIT_DRIVER-------");
+			// break;
+			// driver = new RemoteWebDriver(server, capabilities);
+
+		}
+				
+				else {
 			throw new ScreenException(
-					"------Only FireFox,InternetExplore and Chrome works-----------");
+					"------Only FireFox,InternetExplore, Chrome, Opera, Safari and Htmlunit works-----------");
 		}
 
 		/**
@@ -323,7 +336,7 @@ public class BaseScreen {
         element.click();
         Thread.sleep(3000);
         waitForElementPresent(uiConstants.AMAILTEXT,methodName);
-        getXpathWebElement(this.uiConstants.AMAILTEXT);
+        getcssWebElement(this.uiConstants.AMAILTEXT);
         element.sendKeys(this.uif.EMAIL);
         Thread.sleep(2000);
         waitForElementPresent(uiConstants.APASSWORDT,methodName);
@@ -347,6 +360,9 @@ public class BaseScreen {
                     .getMethodName();
             ;
          }
+        waitForElementPresent(uiConstants.PHRESCOBLOG,methodName);
+        getXpathWebElement(this.uiConstants.PHRESCOBLOG);
+        click();
         waitForElementPresent(uiConstants.SEARCHBOX,methodName);
         getXpathWebElement(uiConstants.SEARCHBOX);
         element.sendKeys(phpData.SEARCHBOXVALUE);
