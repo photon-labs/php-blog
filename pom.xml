@@ -23,23 +23,7 @@
                 <version>2.2.0.2002-SNAPSHOT</version>
                 <extensions>true</extensions>
             </plugin>
-			<plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>license-maven-plugin</artifactId>
-                <version>1.1</version>
-                <configuration>
-                   <verbose>false</verbose>
-                   <processStartTag>###</processStartTag>
-                   <processEndTag>###</processEndTag>
-                  <!-- <sectionDelimiter>" "</sectionDelimiter> -->
-                   <licenseName>apache_v2</licenseName>
-				   <roots>
-				   <root>source</root>
-				   <root>test</root>
-				   </roots>
-                </configuration>
-            </plugin>
-        </plugins>
+			</plugins>
     </build>
     <properties>
         <sonar.language xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">php</sonar.language>
