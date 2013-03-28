@@ -23,7 +23,7 @@
                 <version>2.2.0.2002-SNAPSHOT</version>
                 <extensions>true</extensions>
             </plugin>
-			</plugins>
+		</plugins>
     </build>
     <properties>
         <sonar.language xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">php</sonar.language>
