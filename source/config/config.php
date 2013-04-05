@@ -1,6 +1,5 @@
 <?php /*
-/*
- * PHR_PhpBlog
+* PHR_PhpBlog
  *
  * Copyright (C) 1999-2013 Photon Infotech Inc.
  *
@@ -15,9 +14,7 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
- */
-*/ ?>
-<?php
+*/ ?><?php
 
 function getConfigByName($currentEnv, $type, $name) {
     $self = $_SERVER['PHP_SELF'];
