@@ -1,6 +1,5 @@
 <?php /*
-/*
- * PHR_PhpBlog
+ * PHR_DrupalEshop
  *
  * Copyright (C) 1999-2013 Photon Infotech Inc.
  *
@@ -15,8 +14,7 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
- */
- ?>
+*/ ?>
 <table width="100%" border="0" align="center" cellpadding="5" cellspacing="0">
   <tr>
     <td><div align="center"><font size="2"><?php
