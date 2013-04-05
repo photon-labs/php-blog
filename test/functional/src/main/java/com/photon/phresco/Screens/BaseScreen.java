@@ -335,10 +335,7 @@ public class BaseScreen {
         click();
         waitForElementPresent(this.phpConstants.TEXTACCUPDATE, methodName);
         isTextPresent(phpConstants.TEXTACCUPDATE);
-     	/*waitForElementPresent(uiConstants.DASHBOARD,methodName);
-        getXpathWebElement(this.uiConstants.DASHBOARD);
-        element.click();*/
-        Thread.sleep(2000);
+     	Thread.sleep(2000);
 	}
 	
 	public void LoginChek(String methodName,UIConstants uiConstants) throws Exception {
@@ -476,17 +473,7 @@ public class BaseScreen {
 					.getMethodName();
 			
 		}
-		  /*getXpathWebElement(this.uiConstants.HOME);
-	      click();
-	      Thread.sleep(4000);
-	      waitForElementPresent(uiConstants.DASHBOARD,methodName);
-	      getXpathWebElement(this.uiConstants.DASHBOARD);
-	      element.click();
-	      Thread.sleep(2000);
-	      waitForElementPresent(uiConstants.CATLINK1,methodName);
-	      getXpathWebElement(this.uiConstants.CATLINK1);
-		  click();
-		  Thread.sleep(2000);*/
+		  
 	      getXpathWebElement(this.uiConstants.EDIT1);
 	      click();
 	      Thread.sleep(3000);
