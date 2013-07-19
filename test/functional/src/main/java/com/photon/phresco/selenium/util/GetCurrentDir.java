@@ -21,7 +21,7 @@ import java.io.File;
 
 public class GetCurrentDir {
 
-	public static String targetDirectory = "/target" + "/surefire-reports" + "/ScreenShots";
+	public static String targetDirectory = "/target" + "/surefire-reports" + "/screenshots";
 	public static String currentdir;
 	public static String screenShotFolder;
 	public static File fileName;

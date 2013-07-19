@@ -25,10 +25,10 @@
           <register>//li[7]/a</register>   
           <usernamet>//input</usernamet> 
           <emailt>//div[4]/input</emailt>
-          <passwordt>//div[6]/input</passwordt>
+          <passwordt>//input[@id='userPassword']</passwordt>
           <rbutton>//div[7]/input</rbutton>
-          <amailt>css=#adminEmail</amailt>
-          <apassword>//input[@id='adminPassword']</apassword>
+          <amailt>//input</amailt>
+          <apassword>//form[@id='login']/div[4]/input</apassword>
           <abutton>//input[@name='Submit']</abutton>
           <logout>//a[contains(text(),'logout')]</logout>
           <searchbox>//input</searchbox>

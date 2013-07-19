@@ -26,6 +26,8 @@ public class PhpData {
 	
 	public String SEARCHBOXVALUE="searchvalue";
 	 public String TEXTACCUPDATE="textaccupdate";
+	 public String LOGINUPDATEVALUE="loginupdatevalue";
+	 public String SAMEUSERREGISTER="sameUserRegsiter";
 	 public String CATEGORYNAME="categoryname";
 	 public String CATEGORYDESCRIPTION="categorydescription";
 	 public String CATDESCRIPTIONADD="catdescriptionadd";

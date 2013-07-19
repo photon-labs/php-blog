@@ -23,7 +23,9 @@
 	<phpblog>
        
       	<searchvalue>Drupal</searchvalue>    	
-      	<textaccupdate>Account has been updated successfully.</textaccupdate>   	
+      	<textaccupdate>User Name john Already Exists</textaccupdate>   	
+      	<loginupdatevalue>Account has been updated successfully.</loginupdatevalue>>
+      	<sameUserRegsiter> User Name john Already Exists </sameUserRegsiter>
       	<categoryname>selenium1</categoryname>
 	    <categorydescription>Selenium is open source framework</categorydescription>   
         <catdescriptionadd>Selenium is open source framework we can write the test cases using at any programming language</catdescriptionadd>

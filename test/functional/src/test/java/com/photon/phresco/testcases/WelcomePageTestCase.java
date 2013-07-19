@@ -111,6 +111,9 @@ public class WelcomePageTestCase {
 		}
 	}
 	
+	
+	
+	
 
 	//@Test(groups = { "fast" })
 	@Test
@@ -267,7 +270,7 @@ public void testJToDeleteTopic()
 	}
 }
 
-	
+
 	
 //@AfterGroups(groups = { "fast" })
 @AfterTest

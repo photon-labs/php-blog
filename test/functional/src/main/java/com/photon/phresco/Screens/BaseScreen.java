@@ -18,9 +18,6 @@
 package com.photon.phresco.Screens;
 
 import java.awt.AWTException;
-
-import java.awt.Robot;
-import java.awt.event.KeyEvent;
 import java.io.File;
 import java.io.IOException;
 import java.net.MalformedURLException;
@@ -32,16 +29,13 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.Dimension;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeDriverService;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.remote.Augmenter;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -68,6 +62,7 @@ public class BaseScreen {
 	private UIConstants uiConstants;
 	private UserInfoConstants uif;
 	private  PhrescoUiConstants phrsc;
+	
 	DesiredCapabilities capabilities;
 
 
@@ -285,16 +280,26 @@ public class BaseScreen {
 		}
 
 		catch (Exception e) {
-			/*File scrFile = ((TakesScreenshot) driver)
-					.getScreenshotAs(OutputType.FILE);
-			FileUtils.copyFile(scrFile,
-					new File(GetCurrentDir.getCurrentDirectory() + "\\"
-							+ methodName + ".png"));
-			throw new RuntimeException("waitForElementPresent"
-					+ super.getClass().getSimpleName() + " failed", e);*/
+			captureScreenShot(methodName);
 			Assert.assertNull(e);
 		}
 	}
+	
+	public void captureScreenShot(String methodName) {
+        log.info("ENTERING IN CAPTURE SCREENSHOT ");
+        WebDriver augmentedDriver = new Augmenter().augment(driver);
+        File screenshot = ((TakesScreenshot) augmentedDriver)
+                        .getScreenshotAs(OutputType.FILE);
+        try {
+
+                FileUtils.copyFile(screenshot,
+                                new File(GetCurrentDir.getCurrentDirectory()
+                                                + File.separator + methodName + ".png"));
+        } catch (Exception e1) {
+                log.info("EXCEPTION IN CAPTURE SCREENSHOT " + e1.getMessage());
+        }
+}
+	
 
 	Function<WebDriver, WebElement> presenceOfElementLocated(final By locator) {
 		log.info("Entering:------presenceOfElementLocated()-----Start");
@@ -333,12 +338,9 @@ public class BaseScreen {
         waitForElementPresent(uiConstants.RBUTTON,methodName);
         getXpathWebElement(this.uiConstants.RBUTTON);
         click();
-        waitForElementPresent(this.phpConstants.TEXTACCUPDATE, methodName);
-        isTextPresent(phpConstants.TEXTACCUPDATE);
-     	/*waitForElementPresent(uiConstants.DASHBOARD,methodName);
-        getXpathWebElement(this.uiConstants.DASHBOARD);
-        element.click();*/
-        Thread.sleep(2000);
+
+                isTextPresent(phpConstants.TEXTACCUPDATE,methodName);
+     	Thread.sleep(2000);
 	}
 	
 	public void LoginChek(String methodName,UIConstants uiConstants) throws Exception {
@@ -353,7 +355,7 @@ public class BaseScreen {
         element.click();
         Thread.sleep(3000);
         waitForElementPresent(uiConstants.AMAILTEXT,methodName);
-        getcssWebElement(this.uiConstants.AMAILTEXT);
+        getXpathWebElement(this.uiConstants.AMAILTEXT);
         element.sendKeys(this.uif.EMAIL);
         Thread.sleep(2000);
         waitForElementPresent(uiConstants.APASSWORDT,methodName);
@@ -367,6 +369,8 @@ public class BaseScreen {
         waitForElementPresent(uiConstants.LBUTTON,methodName);
         getXpathWebElement(this.uiConstants.LBUTTON);
         element.click();
+        waitForElementPresent(uiConstants.LOGLINK,methodName);
+              
         Thread.sleep(5000);
         
 	}
@@ -439,7 +443,7 @@ public class BaseScreen {
         getXpathWebElement(this.uiConstants.UBUTTON);
         click();
         Thread.sleep(5000);
-        isTextPresent(phpConstants.TEXTACCUPDATE);
+        isTextPresent(phpConstants.LOGINUPDATEVALUE,methodName);
       
 	}
 	
@@ -463,7 +467,7 @@ public class BaseScreen {
 	    Thread.sleep(2000);
 	    getXpathWebElement(this.uiConstants.CATBUTTON);
 	    click();
-	    isTextPresent(phpConstants.TEXTCATEGORYADD);
+	    isTextPresent(phpConstants.TEXTCATEGORYADD,methodName);
 	    Thread.sleep(3000);
 	    
 	}
@@ -476,17 +480,7 @@ public class BaseScreen {
 					.getMethodName();
 			
 		}
-		  /*getXpathWebElement(this.uiConstants.HOME);
-	      click();
-	      Thread.sleep(4000);
-	      waitForElementPresent(uiConstants.DASHBOARD,methodName);
-	      getXpathWebElement(this.uiConstants.DASHBOARD);
-	      element.click();
-	      Thread.sleep(2000);
-	      waitForElementPresent(uiConstants.CATLINK1,methodName);
-	      getXpathWebElement(this.uiConstants.CATLINK1);
-		  click();
-		  Thread.sleep(2000);*/
+		  
 	      getXpathWebElement(this.uiConstants.EDIT1);
 	      click();
 	      Thread.sleep(3000);
@@ -497,7 +491,7 @@ public class BaseScreen {
 	      getXpathWebElement(this.uiConstants.SUBMITBUTTON);
 	      click();
 	      Thread.sleep(8000);
-	      isTextPresent(phpConstants.TEXTCATEGORYUPDATE);
+	      isTextPresent(phpConstants.TEXTCATEGORYUPDATE,methodName);
 		  Thread.sleep(3000);
 	   
 		
@@ -518,7 +512,7 @@ public class BaseScreen {
 		 Alert alert=driver.switchTo().alert();
 		 alert.accept();
 		 Thread.sleep(3000);
-		 isTextPresent(phpConstants.TEXTCATEGORYREMOVE);
+		 isTextPresent(phpConstants.TEXTCATEGORYREMOVE,methodName);
 		 getXpathWebElement(this.uiConstants.HOMELAST);
 		 element.click();
 		 Thread.sleep(5000);
@@ -551,7 +545,7 @@ public class BaseScreen {
 	    Thread.sleep(2000);	
 	    getXpathWebElement(this.uiConstants.ONCECLICK);
 	    click();
-	    isTextPresent(phpConstants.TEXTTOPICADD);
+	    isTextPresent(phpConstants.TEXTTOPICADD,methodName);
 	    Thread.sleep(5000);
 	    
 	    
@@ -600,7 +594,7 @@ public class BaseScreen {
 			    Alert alert=driver.switchTo().alert();
 			    alert.accept();
 			    Thread.sleep(3000);
-			    isTextPresent(phpConstants.TEXTTOPICREMOVE);
+			    isTextPresent(phpConstants.TEXTTOPICREMOVE,methodName);
 			    waitForElementPresent(uiConstants.LOGOFF, methodName);
 				getXpathWebElement(this.uiConstants.LOGOFF);
 			    click();
@@ -613,21 +607,22 @@ public class BaseScreen {
 	 
 	
 	   
-	public boolean isTextPresent(String text) {
-        if (text!= null){
-        boolean value=driver.findElement(By.tagName("body")).getText().contains(text);           
-        System.out.println("-----TextCheck value-->"+value);   
-        Assert.assertTrue(value);
-        return value;
-       }
-        else
-        {
-            throw new RuntimeException("---- Text not existed----");
-        }
-       
-       
-       
-    }        
+	    public void isTextPresent(String text,String methodName) {
+			if (text!= null){
+				log.info("ENTERING TEXT PRESENT");
+			boolean value=driver.findElement(By.tagName("body")).getText().contains(text);	
+			if(!value){
+				captureScreenShot(methodName);
+			}
+			Assert.assertTrue(value);   
+		    
+		    }
+			else
+			{
+				
+				throw new RuntimeException("---- Text not existed----");
+			}
+		}
 	public void click() throws ScreenException {
 		log.info("Entering:********click operation start********");
 		try {

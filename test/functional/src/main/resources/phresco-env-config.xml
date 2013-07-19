@@ -21,7 +21,7 @@
 <environment>
            <Browser>htmlunit</Browser>
 		   	<Server>
-               <context>phpblogBug</context>
+               <context>phpblog</context>
                <protocol>http</protocol>
                <host>localhost</host>
                <port>80</port>
