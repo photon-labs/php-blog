@@ -132,7 +132,7 @@
                     <description></description>
                     <key>configurations</key>
                     <multiple>false</multiple>
-                    <value>server</value>
+                    <value>Server Configuration</value>
                     <sort>false</sort>
                     <show>true</show>
                 </parameter>
@@ -157,7 +157,7 @@
                     <description></description>
                     <key>testName</key>
                     <multiple>false</multiple>
-                    <value>Test</value>
+                    <value>PhpBlogServer</value>
                     <sort>false</sort>
                     <show>false</show>
                 </parameter>

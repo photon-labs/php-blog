@@ -134,7 +134,7 @@
                     <description></description>
                     <key>configurations</key>
                     <multiple>false</multiple>
-                    <value>DB</value>
+                    <value>Database Configuration</value>
                     <sort>false</sort>
                     <show>true</show>
                 </parameter>
@@ -159,7 +159,7 @@
                     <description></description>
                     <key>testName</key>
                     <multiple>false</multiple>
-                    <value>test</value>
+                    <value>PhpBlogDB</value>
                     <sort>false</sort>
                     <show>false</show>
                 </parameter>
