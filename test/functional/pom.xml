@@ -19,7 +19,7 @@
 		<dependency>
 			 <groupId>org.seleniumhq.selenium</groupId>
              <artifactId>selenium-server-standalone</artifactId>
- 			<version>2.30.0</version>
+ 			<version>2.37.0</version>
  	    </dependency>  
  	 <dependency>
 		<groupId>org.seleniumhq.selenium</groupId>
@@ -105,7 +105,7 @@
 							
 												 <groupId>org.seleniumhq.selenium</groupId>
                                                <artifactId>selenium-server-standalone</artifactId>
-                                            <version>2.30.0</version>
+                                            <version>2.37.0</version>
 												<overWrite>false</overWrite>
 											    <outputDirectory>${project.basedir}/lib</outputDirectory>
 		
@@ -198,7 +198,7 @@
                 </activation>
                 <properties>                
                      <driver.classifier>win</driver.classifier>
-                     <driver.version>23.0.1240.0</driver.version>
+                     <driver.version>33.0.1726.0</driver.version>
                 </properties>
             </profile>
             <profile>
@@ -212,7 +212,7 @@
                 </activation>
                 <properties>
                    <driver.classifier>linux32</driver.classifier>
-                   <driver.version>23.0.1240.0</driver.version>
+                   <driver.version>33.0.1726.0</driver.version>
                 </properties>
             </profile>
             <profile>
@@ -226,7 +226,7 @@
                 </activation>
                 <properties>
                     <driver.classifier>linux64</driver.classifier>
-                    <driver.version>23.0.1240.0</driver.version>
+                    <driver.version>33.0.1726.0</driver.version>
                 </properties>
             </profile>
             <profile>
@@ -238,7 +238,7 @@
                 </activation>
                 <properties>
                    <driver.classifier>mac</driver.classifier>
-                    <driver.version>23.0.1240.0</driver.version>
+                    <driver.version>33.0.1726.0</driver.version>
                 </properties>
             </profile>
         </profiles>
