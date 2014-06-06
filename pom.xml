@@ -4,7 +4,7 @@
     <groupId>com.photon.phresco</groupId>
     <artifactId>PHR_PhpBlog</artifactId>
     <name>PHR_PhpBlog</name>
-    <version>3.3.1.12002-SNAPSHOT</version>
+    <version>3.3.1.13001-SNAPSHOT</version>
 	<inceptionYear>1999</inceptionYear>
     <organization>
         <name>Photon Infotech Inc.</name>
@@ -20,7 +20,7 @@
             <!-- <plugin>
                 <groupId>com.photon.phresco.plugins</groupId>
                 <artifactId>php-maven-plugin</artifactId>
-                <version>3.3.1.12002-SNAPSHOT</version>
+                <version>3.3.1.13001-SNAPSHOT</version>
                 <extensions>true</extensions>
             </plugin> -->
 
