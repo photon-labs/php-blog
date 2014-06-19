@@ -2,7 +2,7 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.photon.phresco</groupId>
-  <artifactId>PHR_PHP_Eshop</artifactId>
+  <artifactId>PHR_PHP_Eshop_Func</artifactId>
   <version>0.0.1</version>
   <packaging>jar</packaging>
   <name>PHR_PHP_Eshop</name>
