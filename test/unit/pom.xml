@@ -26,7 +26,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
 	<artifactId>php-blog-unit</artifactId>
 	<packaging>php</packaging>
 	<name>Phresco Pilot Project for PHP unit tests</name>
-	<version>3.3.1.16001-SNAPSHOT</version>
+	<version>3.3.1.16002-SNAPSHOT</version>
 	<pluginRepositories>
 		<pluginRepository>
 			<id>release-repo1.php-maven.org</id>

@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.photon.phresco</groupId>
   <artifactId>php-blog-func</artifactId>
-  <version>3.3.1.16001-SNAPSHOT</version>
+  <version>3.3.1.16002-SNAPSHOT</version>
   <packaging>jar</packaging>
   <name>PHR_PHP_Eshop</name>
   <url>http://maven.apache.org</url> 
